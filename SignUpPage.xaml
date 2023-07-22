@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UasKomber.SignUpPage"
+             BackgroundColor="Aqua"
+             Title="SignUpPage">
+    <ScrollView>
+        <Grid BackgroundColor="Pink">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout BackgroundColor="LightPink" HeightRequest="60" WidthRequest="60">
+            <Image Source="singupuser.png" Aspect="AspectFill" Margin="0"/>
+        </StackLayout>
+
+        <Grid RowSpacing="5" Grid.Row="1" Margin="20,20,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Text="Welcome!" HorizontalOptions="Center" 
+                   FontSize="Title" FontAttributes="Bold"
+                   Padding="0" Margin="0 "/>
+            <Label Grid.Row="2" Text="Sign Up!" HorizontalOptions="Center" 
+                   FontSize="Subtitle" FontAttributes="Bold"
+                   Padding="0" Margin="0 "/>
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="#ff5050" BorderColor="BlanchedAlmond" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal" WidthRequest="1000" >
+                        <Frame BackgroundColor="LightPink" BorderColor="AntiqueWhite" 
+                           HeightRequest="40" WidthRequest="40" 
+                           CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="email.jpg" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry  Placeholder="Email@gmail.com" TextColor="Black" 
+                       FontAttributes="Bold" VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#ff5050" BorderColor="BlanchedAlmond" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal" WidthRequest="1000" >
+                        <Frame BackgroundColor="LightPink" BorderColor="AntiqueWhite" 
+                           HeightRequest="40" WidthRequest="40" 
+                           CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="user2.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry  Placeholder="New Username" TextColor="Black" 
+                       FontAttributes="Bold" VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#ff5050" BorderColor="BlanchedAlmond" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal" WidthRequest="1000" >
+                        <Frame BackgroundColor="LightPink" BorderColor="AntiqueWhite" 
+                           HeightRequest="40" WidthRequest="40" 
+                           CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="mobile.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry  Placeholder="+62" TextColor="Black" 
+                       FontAttributes="Bold" VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#ff5050" BorderColor="BlanchedAlmond" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal" WidthRequest="1000" >
+                        <Frame BackgroundColor="LightPink" BorderColor="AntiqueWhite" 
+                           HeightRequest="40" WidthRequest="40" 
+                           CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="lock2.jpg" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry  Placeholder="Password" TextColor="Black" 
+                       FontAttributes="Bold" VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#ff5050" BorderColor="BlanchedAlmond" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal" WidthRequest="1000" >
+                        <Frame BackgroundColor="LightPink" BorderColor="AntiqueWhite" 
+                           HeightRequest="40" WidthRequest="40" 
+                           CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="lock2.jpg" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry  Placeholder="Confirm Password" TextColor="Black" 
+                       FontAttributes="Bold" VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                
+                    
+                <StackLayout Orientation="Horizontal" Margin="0,5,0,0" Padding="0">
+                    <CheckBox Color="#b30086" IsChecked="False"/>
+                    <Label Text="Remember Me" TextColor="#660033" FontSize="Small" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label Text="Forgot Password" TextColor="#ff3399" FontAttributes="Bold" 
+                           VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                    <Button Text="Sign Up" BackgroundColor="#ff33cc" TextColor="Wheat" FontAttributes="Bold" 
+                        CornerRadius="30" WidthRequest="200" Margin="0,15,0,0" />
+
+                    <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0" Padding="0">
+                    <Label  Text="Already Have An Account?" TextColor="#660033" FontSize="Small" FontAttributes="Italic"/>
+                    <Label Text="Sign In Here" TextColor="#ff3399" FontSize="Small" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+    </ScrollView>
+
+</ContentPage>
+                
+
+              
